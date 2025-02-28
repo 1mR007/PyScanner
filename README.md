@@ -123,6 +123,8 @@ PyScanner done: 1 IP address (1 host up) scanned in 3.24 seconds
 Detailed vulnerability information saved to 45.33.32.156_vulnerabilities.json
 ```
 
+> **Note**: This scan was performed on scanme.nmap.org, an official server provided by Nmap for testing purposes. No unauthorized testing was conducted on third-party infrastructures. The displayed vulnerabilities are potential findings that require in-depth analysis before drawing any conclusions. This project is purely educational and intended for learning purposes.
+
 ## 🖥️ Screenshot
 
 <img src="assets/screenshot.png" alt="Screenshot" width="500">
@@ -151,7 +153,6 @@ Detailed vulnerability information saved to 45.33.32.156_vulnerabilities.json
 The NVD API provides detailed information about vulnerabilities, including severity and potential impact. Note that the NVD API has rate limits (5 requests per 30 seconds without an API key). 
 
 For better performance and higher rate limits, it is recommended to obtain an API key from [NVD](https://nvd.nist.gov/developers/request-an-api-key).
-
 
 ## 📝 License
 
