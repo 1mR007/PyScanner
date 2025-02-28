@@ -47,15 +47,16 @@ pip install -r requirements.txt
 
 | Option  | Description  | Example  |
 |---------|-------------|----------|
-| `-t` | Scan a target | `python3 scanner.py -t scanme.nmap.org` |
-| `-p` | Specify a port range (20-1000) | `python3 scanner.py -t 192.168.1.1 -p 20-1000` |
-| `-sV` | Detect service versions | `python3 scanner.py -t 192.168.1.1 -sV` |
-| `-V` | Check for vulnerabilities (requires -sV) | `python3 scanner.py -t 192.168.1.1 -sV -V` |
-| `-n` | Discover hosts on a network | `python3 scanner.py -n 192.168.1.0/24` |
-| `-Pn` | Scan without initial ping | `python3 scanner.py -t 192.168.1.1 -Pn` |
-| `--apikey` | Provide NVD API key for better rate limits | `python3 scanner.py -t 192.168.1.1 -sV -V --apikey YOUR_API_KEY` |
-| `--txt` | Export results to a TXT file | `python3 scanner.py -t 192.168.1.1 --txt report.txt` |
-| `--json` | Export results to a JSON file | `python3 scanner.py -t 192.168.1.1 --json report.json` |
+| `-t` | Scan a target | `python.exe -m src.PyScanner -t scanme.nmap.org` |
+| `-p` | Specify a port range (20-1000) | `python.exe -m src.PyScanner -t 192.168.1.1 -p 20-1000` |
+| `-sV` | Detect service versions | `python.exe -m src.PyScanner -t 192.168.1.1 -sV` |
+| `-V` | Check for vulnerabilities (requires -sV) | `python.exe -m src.PyScanner -t 192.168.1.1 -sV -V` |
+| `-n` | Discover hosts on a network | `python.exe -m src.PyScanner -n 192.168.1.0/24` |
+| `-Pn` | Scan without initial ping | `python.exe -m src.PyScanner -t 192.168.1.1 -Pn` |
+| `--apikey` | Provide NVD API key for better rate limits | `python.exe -m src.PyScanner -t 192.168.1.1 -sV -V --apikey YOUR_API_KEY` |
+| `--txt` | Export results to a TXT file | `python.exe -m src.PyScanner -t 192.168.1.1 --txt report.txt` |
+| `--json` | Export results to a JSON file | `python.exe -m src.PyScanner -t 192.168.1.1 --json report.json` |
+
 
 ### 🔹 Examples
 
@@ -150,7 +151,6 @@ Detailed vulnerability information saved to 45.33.32.156_vulnerabilities.json
 The NVD API provides detailed information about vulnerabilities, including severity and potential impact. Note that the NVD API has rate limits (5 requests per 30 seconds without an API key). 
 
 For better performance and higher rate limits, it is recommended to obtain an API key from [NVD](https://nvd.nist.gov/developers/request-an-api-key).
-
 
 
 ## 📝 License
