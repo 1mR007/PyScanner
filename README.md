@@ -62,22 +62,23 @@ pip install -r requirements.txt
 
 **Basic scan**:
 ```bash
-python3 scanner.py -t <target>
+python.exe -m src.PyScanner -t <target>
 ```
 
 **Scan with version detection**:
 ```bash
-python3 scanner.py -t <target> -sV
+python.exe -m src.PyScanner -t <target> -sV
 ```
 
 **Complete vulnerability scan**:
 ```bash
-python3 scanner.py -t <target> -sV -V
+python.exe -m src.PyScanner -t <target> -sV -V
 ```
 
-**Network scan with vulnerability assessment**:
+**Network scan for host discovery**:
 ```bash
-python3 scanner.py -n 192.168.1.0/24 -sV -V
+python.exe -m src.PyScanner -n 192.168.1.0/24
+```
 ```
 
 ## 📝 Example Output
