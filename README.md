@@ -47,38 +47,37 @@ pip install -r requirements.txt
 
 | Option  | Description  | Example  |
 |---------|-------------|----------|
-| `-t` | Scan a target | `python.exe -m src.PyScanner -t scanme.nmap.org` |
-| `-p` | Specify a port range (20-1000) | `python.exe -m src.PyScanner -t 192.168.1.1 -p 20-1000` |
-| `-sV` | Detect service versions | `python.exe -m src.PyScanner -t 192.168.1.1 -sV` |
-| `-V` | Check for vulnerabilities (requires -sV) | `python.exe -m src.PyScanner -t 192.168.1.1 -sV -V` |
-| `-n` | Discover hosts on a network | `python.exe -m src.PyScanner -n 192.168.1.0/24` |
-| `-Pn` | Scan without initial ping | `python.exe -m src.PyScanner -t 192.168.1.1 -Pn` |
-| `--apikey` | Provide NVD API key for better rate limits | `python.exe -m src.PyScanner -t 192.168.1.1 -sV -V --apikey YOUR_API_KEY` |
-| `--txt` | Export results to a TXT file | `python.exe -m src.PyScanner -t 192.168.1.1 --txt report.txt` |
-| `--json` | Export results to a JSON file | `python.exe -m src.PyScanner -t 192.168.1.1 --json report.json` |
+| `-t` | Scan a target | `python3 -m src.PyScanner -t scanme.nmap.org` |
+| `-p` | Specify a port range (20-1000) | `python3 -m src.PyScanner -t 192.168.1.1 -p 20-1000` |
+| `-sV` | Detect service versions | `python3 -m src.PyScanner -t 192.168.1.1 -sV` |
+| `-V` | Check for vulnerabilities (requires -sV) | `python3 -m src.PyScanner -t 192.168.1.1 -sV -V` |
+| `-n` | Discover hosts on a network | `python3 -m src.PyScanner -n 192.168.1.0/24` |
+| `-Pn` | Scan without initial ping | `python3 -m src.PyScanner -t 192.168.1.1 -Pn` |
+| `--apikey` | Provide NVD API key for better rate limits | `python3 -m src.PyScanner -t 192.168.1.1 -sV -V --apikey YOUR_API_KEY` |
+| `--txt` | Export results to a TXT file | `python3 -m src.PyScanner -t 192.168.1.1 --txt report.txt` |
+| `--json` | Export results to a JSON file | `python3 -m src.PyScanner -t 192.168.1.1 --json report.json` |
 
 
 ### 🔹 Examples
 
 **Basic scan**:
 ```bash
-python.exe -m src.PyScanner -t <target>
+python3 -m src.PyScanner -t <target>
 ```
 
 **Scan with version detection**:
 ```bash
-python.exe -m src.PyScanner -t <target> -sV
+python3 -m src.PyScanner -t <target> -sV
 ```
 
 **Complete vulnerability scan**:
 ```bash
-python.exe -m src.PyScanner -t <target> -sV -V
+python3 -m src.PyScanner -t <target> -sV -V
 ```
 
 **Network scan for host discovery**:
 ```bash
-python.exe -m src.PyScanner -n 192.168.1.0/24
-```
+python3 -m src.PyScanner -n 192.168.1.0/24
 ```
 
 ## 📝 Example Output
