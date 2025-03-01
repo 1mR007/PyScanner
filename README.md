@@ -125,9 +125,12 @@ Detailed vulnerability information saved to 45.33.32.156_vulnerabilities.json
 
 > **Note**: This scan was performed on scanme.nmap.org, an official server provided by Nmap for testing purposes. No unauthorized testing was conducted on third-party infrastructures. The displayed vulnerabilities are potential findings that require in-depth analysis before drawing any conclusions. This project is purely educational and intended for learning purposes.
 
-## 🖥️ Screenshot
+## 🖥️ Screenshots
 
-<img src="assets/screenshot.png" alt="Screenshot" width="500">
+<div style="display: flex; gap:10px;">
+   <img src="assets/screen-1.png" alt="Screenshot-1" width="500">
+   <img src="assets/screen-2.png" alt="Screenshot-2" width="500">
+</div>
 
 ## 📢 Notes
 
